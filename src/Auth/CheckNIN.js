@@ -60,7 +60,7 @@ const CheckNIN = () => {
 			"http://ad1x.sloganinimcverification.com/api/triangle/nin/verify";
 
 		fetch(localURL, {
-			method: "GET",
+			method: "POST",
 			headers: {
 				"access-control-allow-origin": "*",
 				"Content-type": "application/json; charset=UTF-8",
@@ -78,7 +78,7 @@ const CheckNIN = () => {
 
 	return (
 		<Container>
-			<Wrapper onSubmit={checkData}>
+			<Wrapper onSubmit={onSubmit}>
 				<Logo>nin Check</Logo>
 
 				<Text>Please enter your NIMC Number.</Text>
